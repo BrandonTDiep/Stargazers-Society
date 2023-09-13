@@ -1,4 +1,4 @@
-# Stargazer Society
+# Stargazers Society
 A website designed and developed to utilize NASA API APOD to get the astronomy picture of the day and its description. 
 
 **Link to project:** https://stargazerssociety.netlify.app/
