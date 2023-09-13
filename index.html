@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Stargazers Society</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/external-galaxy-aerospace-phatplus-lineal-color-phatplus.png">
+		<script src="https://kit.fontawesome.com/ce6dc40760.js" crossorigin="anonymous"></script>
+
+		<!-- <a  href="https://icons8.com/icon/aVqoQqQDLPQG/galaxy">Galaxy</a> icon by <a href="https://icons8.com">Icons8</a> -->
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#" class = "nav-link"><i class="fa-solid fa-star"></i></a></li>
+
+					<li><h2>Stargazers Society</h2></li>
+					<li><a href="#" class = "nav-link"><i class="fa-solid fa-star"></i></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="title">
+				<h1>Astronomy Picture Of The Day</h1>
+				<span id="apodDate"></span>
+				<span id="apodName"></span>
+			</section>
+
+			<div class="nasaAPOD">
+				<img src="#" class="nasa-img" alt="nasa img">
+				<iframe class="hidden" src="" frameborder="0"></iframe>
+			</div>
+			
+			<section class="pickDate">
+				<div class="theDate">
+					<input type="date" id="dateField" value="">
+					<button type="button" name="button">Submit</button>
+				</div>
+
+				<div class="explain">
+					<p id="explanation">Explanation</p>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Copyright © 2023 Brandon Diep <span>|</span> Supported by NASA and NASA Open API Project</p>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{ 
+     font-size: 62.5%;      
+     font-family: sans-serif;
+}
+body {
+     background-image: linear-gradient(to bottom, rgba(14, 13, 13, 0.5),rgba(0, 0, 0, 0.8)), url(https://hdwallpaperim.com/wp-content/uploads/2017/08/22/349339-Earth-space-Milky_Way.jpg);
+     background-attachment: fixed;
+     color: white;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+
+.hidden{
+     display: none; 
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* ========= HEADER ========= */
+
+i{
+     color: yellow;
+     font-size: 3rem;
+     cursor:default;
+}
+
+nav{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li{
+     display: inline-block;
+     list-style: none;
+     color: white;
+}
+
+nav ul{
+     padding: 0;
+}
+nav ul li h2{
+     font-size: 2.5rem;
+     margin-left: 20px;
+     margin-right: 20px;
+}
+
+
+
+
+
+/* ========= MAIN ========= */
+
+main h1{
+     font-size: 3rem;
+     color: white;
+     margin-top: 30px;
+}
+
+main .title{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+main .title span{
+     font-size: 2rem;
+}
+
+#apodDate{
+     font-style: italic;
+     font-weight: 100;
+     margin-bottom: 10px;
+}
+
+#apodName{
+     font-size: 3rem;
+}
+
+
+/* ========= IMAGE ========= */
+
+img, iframe{
+     display: flex;
+     max-width: 50%;
+     height: auto;
+     margin: 20px auto;
+     border: 3px solid white;
+}
+
+
+
+/* ========= DATE ========= */
+
+
+.theDate{
+     text-align: center;
+}
+
+
+.pickDate input, .pickDate button{
+     padding: 12px 10px;
+     border-radius: 30px;
+     font-size: 1.3rem;
+     background-color: transparent;
+     margin: 5px 0;
+     color: white;
+     border: 1px solid white;
+     text-align: center;
+     letter-spacing: 1px;
+     text-align: center;
+}
+
+.pickDate input{
+     border-color: rgb(4, 132, 236);
+     margin-right: 10px;
+}
+
+
+::-webkit-calendar-picker-indicator {
+     filter: invert(1);
+ }
+
+
+.theDate button:hover{
+     background-color: white;
+     color: black;
+     transition: all .5s ease;
+}
+
+/* ========= Explain ========= */
+
+.explain{
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+     margin-bottom: 50px;
+     background: rgba(0, 0, 0, 0.5);
+}
+
+.explain p{
+     font-size: 2rem;
+     width: 80%;
+}
+
+.explain p::first-line {
+     color: rgb(4, 132, 236);
+     letter-spacing: 2;
+ }
+
+ .explain p:first-letter {
+     line-height: 1;
+     font-size: 4rem;
+     font-weight: 600;
+ }
+/* ========= FOOTER ========= */
+
+footer{
+     background: rgba(0, 0, 0, 0.8);
+     color: white;
+     text-align: center;
+     padding: 30px 0;
+     margin-top: auto;
+}
+
+footer p{
+     font-size: 1.6rem;
+     margin: 0;
+}
+
+footer p span{
+     font-size: 1.6rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media (max-width: 530px){
+     .nasaAPOD img{
+          max-width: 80%;
+     }
+
+     main h1, #apodName{
+          font-size: 1.8rem;
+     }
+
+     .explain p{
+          font-size: 1.5rem;
+     }
+
+     #apodDate{
+          font-size: 1.3rem;
+     }
+     
+}
+
